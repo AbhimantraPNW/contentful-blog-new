@@ -1,6 +1,7 @@
 import { getEntries } from "@/api/getEntries";
 import CardBlogs from "./components/CardBlogs";
 import { findAsset } from "@/utils/findAsset";
+import BlogPost from "@/components/BlogPost";
 
 export default async function Home() {
   const blogs = await getEntries();
@@ -33,6 +34,8 @@ export default async function Home() {
             />
           );
         })}
+
+        
       </section>
     </main>
   );
