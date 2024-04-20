@@ -11,6 +11,6 @@ export const getEntries = async (): Promise<ContentfulResponse> => {
       next: { revalidate: 10 },
     },
   );
-
+  
   return res.json();
 };

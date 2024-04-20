@@ -16,3 +16,4 @@ export const getEntryBySlug = async (
 
   return res.json();
 };
+  
